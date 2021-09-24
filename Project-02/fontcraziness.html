@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .badsize {
+
+            /* px is an absolute font, can't be changed */
+            font-size: 20px;
+            /* font-size: 1.25rem; */
+
+        }
+
+        .goodsize {
+
+            /* 3rem is 3 times what ever the originial font size is. It's also relative, so it can change size, unlike if it was in a px dimension 
+            1 px = 0.0625 rem
+            20 px * 0.0625 = 1.25 rem */
+            font-size: 3rem;
+
+        }
+
+        .mybox {
+
+            /* em builds on eachother, so if you had 3em and 2em, it would be 5em, which would make the font larger */
+            font-size: 2em;
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <p class="badsize">Logan Falkenberg</p>
+    <p class="goodsize">Logan Falkenberg</p>
+
+    <div class="mybox">
+
+        <p class="goodsize">Pickle</p>
+
+    </div>
+    
+    
+</body>
+</html>

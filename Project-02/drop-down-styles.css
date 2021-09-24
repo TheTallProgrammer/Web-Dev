@@ -1,0 +1,165 @@
+/* ===================================================== */
+/* NAV BUTTONS DROPDOWN BOX STYLES */
+/* ===================================================== */
+
+.navbuttons {
+
+    background-color: rgb(46, 255, 151);
+    padding: 11px 25px;
+    width: 100px;
+    text-align: center;
+
+    /* Puts them next to eachother */
+    display: inline-block;
+
+    /* Makes the buttons know where eachother are and stack on top of eachother */
+    position: relative;
+
+}
+
+.secondary-navbutton {
+    
+    background-color: rgb(223, 125, 101);
+    padding: 11px 25px;
+    width: 100px;
+    text-align: center;
+
+    /* Puts them next to eachother */
+    display: inline-block;
+
+    /* Makes the buttons know where eachother are and stack on top of eachother */
+    position: relative;
+
+}
+
+/* ===================================================== */
+/* HOME DROPDOWN BOX STYLES */
+/* ===================================================== */
+
+.home-dropdown-box {
+
+    /* Turns off the buttons in the dropdown-box class when not used */
+    display: none;
+
+    /* Pushes the buttons down */
+    position: absolute;
+
+    /* If the drop down is hidden behind an image or div, do this to make it come in front */
+    z-index: 100;
+
+    padding-top: 20px;
+
+    margin-left: -28px;
+
+}
+
+/* This turns the buttons on */
+.navbuttons:hover .home-dropdown-box {
+
+    display: block;
+
+}
+
+/* Changes the color of the text inside of the home-dropdown */
+.home-dropdown-box a {
+    
+    color: white;
+
+}
+
+.home-dropdown-box .secondary-navbutton {
+
+    background-color: cadetblue;
+
+}
+
+.home-dropdown-box .secondary-navbutton:hover {
+
+    background-color: goldenrod;
+    transition-duration: .3s;
+
+}
+
+/* ===================================================== */
+/* PRODUCTS DROPDOWN BOX STYLES */
+/* ===================================================== */
+
+.products-dropdown-box {
+
+    /* Turns off the buttons in the dropdown-box class when not used */
+    display: none;
+
+    /* Pushes the buttons down */
+    position: absolute;
+
+    /* If the drop down is hidden behind an image or div, do this to make it come in front */
+    z-index: 100;
+
+    padding-top: 20px;
+
+    margin-left: -28px;
+
+}
+
+/* This turns the buttons on */
+.navbuttons:hover .products-dropdown-box {
+
+    display: block;
+
+}
+
+/* Highlights over the current item you're hovering over in the drop down box */
+.products-dropdown-box .secondary-navbutton:hover {
+
+    background-color: rgb(172, 67, 154);
+    transition-duration: .3s;
+
+}
+
+
+/* ===================================================== */
+/* CONTACT DROPDOWN BOX STYLES */
+/* ===================================================== */
+
+.contact-dropdown-box {
+
+    /* Turns off the buttons in the dropdown-box class when not used */
+    display: none;
+
+    /* Pushes the buttons down */
+    position: absolute;
+
+    /* If the drop down is hidden behind an image or div, do this to make it come in front */
+    z-index: 100;
+
+    padding-top: 20px;
+
+    margin-left: -28px;
+
+}
+
+/* This turns the buttons on */
+.navbuttons:hover .contact-dropdown-box {
+
+    display: block;
+
+}
+
+.contact-dropdown-box .secondary-navbutton {
+
+    background-color: paleturquoise;
+
+}
+
+.contact-dropdown-box .secondary-navbutton:hover {
+
+    background-color: rgb(62, 62, 173);
+    transition-duration: .3s;
+
+}
+
+.contact-dropdown-box a {
+
+    color: rgb(119, 190, 190);
+
+}

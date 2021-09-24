@@ -1,0 +1,434 @@
+html {
+
+    /* This creates a gradient */
+    background-image: linear-gradient(#FC5E55,#FA4083);
+
+}
+
+body {
+
+    /* Imports the lion into the background */
+    background-image: url(icons/image-lion-background.png);
+
+    /* Puts the lion into the middle of the background*/
+    background-position: top center ;
+
+    background-repeat: no-repeat;
+
+    /* Sets the default font and color for the website */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+    font-size: 1.125rem;
+
+}
+
+.container {
+
+    width: 1024px;
+
+    /* This makes the height have a min of 300px, and a dynamic max height depending on whatever is in the container. More useful than default height */
+    min-height: 300px;
+
+    /* Center the container */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* Creates a line below the nav bar */
+    border-bottom: 1px solid lightgray;
+
+}
+
+/* For the contact page */
+.main2 {
+    min-height: 300px;
+    padding-top: 50px;
+    line-height: 30px;
+}
+
+/* For the contact page */
+.main2 h1 {
+
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 25px;
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.205);
+
+}
+
+/* For the contact page */
+.inputwrapper {
+
+    margin-bottom: 30px;
+
+}
+
+/* Makes the input boxes bigger */
+input[type=text], input[type=email], textarea {
+
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+
+    /* subtracts padding and margins from the width to make it line up with the rest */
+    box-sizing: border-box;
+
+}
+
+.newline {
+
+    /* Makes the labels have their own line */
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.navbutton {
+
+    border: 1px solid white;
+    color: white;
+    /* border-style: solid; 
+    border-width: 1px; */
+    margin-left: 30px;
+    text-decoration: none;
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+}
+
+/* Changes the links inside of the navbutton class to white */
+.navbutton a {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.dropdown {
+
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+    /* Brings it a little lower than the button that it's dropping down from */
+    padding-top: 20px;
+
+    text-align: center;
+    margin-left: -65px;
+
+}
+
+.navbutton:hover .dropdown {
+
+    display: block;
+
+}
+
+.dropdown .navbutton {
+
+    width: 120px;
+    background-color: white;
+
+}
+
+.dropdown .navbutton a {
+
+    color: #FA4083;
+
+}
+
+/* Highlights over the current item you're hovering over in the drop down box */
+.dropdown .navbutton:hover {
+
+    background-color: rgb(114, 248, 114);
+    transition-duration: .3s;
+
+}
+
+main {
+
+    min-height: 300px;
+    display: flex;
+
+    /* Centers the items in main vertically */
+    align-items: center;
+
+}
+
+
+.hero-box-one {
+
+    /* This sets up a ratio with the other box, making it 2 times bigger than the other one, giving it a 2/3 size ratio */
+    flex: 2;
+
+    /* Pushes the text away from the picture of the guy fixing the bike (hero-box-two) */
+    padding-right: 100px;
+
+}
+
+.hero-box-one-title {
+
+    font-size: 3.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+
+    /* Adds shadow to the text */
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.205);
+
+}
+
+.hero-box-one p {
+
+    /* Space between the lines of the words */
+    line-height: 1.75rem;
+
+    /* Space between the different paragraphs */
+    margin-bottom: .5rem;
+
+}
+
+/* Class changes specific to the button in the first hero box */
+.hero-box-one .book-online-button {
+
+    color: #FA4083;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+
+    /* Gives the button a background color, making it into a square shape */
+    background-color: white;
+
+    /* Increases the size of the buttons padding around it to make the button bigger */
+    padding: 11px 25px;
+
+    /* This seperates the button from the above text, need inline-block to be able to use margin-top */
+    display: inline-block;
+    margin-top: 20px;
+
+    /* Rounds the buttons corners */
+    border-radius: 1000px;
+
+    /* Adds a box shadow to the button */
+              /* x,  y, blur,color*/
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.205);
+
+}
+
+/* When the mouse overs over the button, the color changes to green */
+.book-online-button:hover {
+
+    background-color: rgb(114, 248, 114);
+
+    /* Timer for how long the transition will take to get to that color */
+    transition-duration: .5s;
+
+}
+
+.hero-box-two {
+
+    flex: 1;
+    
+}
+
+.hero-box-two img {
+
+    border-radius: 12px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.205);
+
+}
+
+/* Used for the phone radio button */
+.margin-right-a {
+
+    margin-right: 20px;
+
+}
+
+/* Adds space between the text next to the radio button and the radio button itself */
+input[type=radio] {
+
+    margin-right: 10px;
+
+}
+
+.submit-button {
+
+    border: 1px solid white;
+    color: #FA4083;
+    /* border-style: solid; 
+    border-width: 1px; */
+    text-decoration: none;
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.205);
+
+
+}
+
+.submit-button:hover {
+
+    background-color:rgb(114, 248, 114);
+    transition: 1s;
+
+}
+
+form {
+
+    margin: 40px 0px;
+
+}
+
+.cards {
+
+    /* Aligns all child elements in the class alongside eachother */
+    display: flex;
+
+    /* Equally seperates the children in the class with a space in between them, can also use justify-content: space-around;*/
+    justify-content: space-between;
+
+    text-align: center;
+
+}
+
+/* Heading in the cards class */
+.cards h2 {
+
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+
+}
+
+/* p text in the cards class */
+.cards p {
+
+    font-size: .85rem;
+    line-height: 1.2rem;
+
+    /* 10 top, 30 right, 20 bottom, 30 left */
+    margin-top: 10px;
+    /* padding: 10px 30px 20px 30px; */
+    
+}
+
+/* Manage the icons in the cards class */
+/* This is known as a compound selector because it's only grabbing the icons in the cards class */
+.cards i {
+
+    font-size: 100px;
+
+}
+
+/* Makes the clickable links in the cards white and removes the underline */
+.cards a {
+
+    color: white;
+    text-decoration: none;
+}
+
+.card-one {
+
+    background-image: url(images/image-background-card1.jpg);
+
+    /* Makes it fit in the box that it's in */
+    /* background-size: 20rem; */
+    background-size: cover;
+
+    /* Makes the image fit better */
+    background-position: bottom;
+
+    min-height: 250px;
+    /* width: 30%; */
+
+}
+
+
+.card-two {
+
+    background-image: url(images/image-background-card2.jpg);
+
+    /* Makes it fit in the box that it's in */
+    /* background-size: 19.5rem; */
+    background-size: cover;
+
+    /* Makes the image fit better */
+    background-position: bottom;
+
+    min-height: 250px;
+    /* width: 30%; */
+
+}
+
+.card-three {
+
+    background-image: url(images/image-background-card3.jpg);
+
+    /* Makes it fit in the box that it's in */
+    /* background-size: 19.3rem; */
+    background-size: cover;
+
+    /* Makes the image fit better */
+    background-position: bottom;
+
+    min-height: 250px;
+    /* width: 30%; */
+
+} 
+
+/* Selects multiple classes at once */
+.card-one, .card-two, .card-three {
+
+    padding: 30px 30px 20px 30px;
+
+    /* Stops the cards from rubbing on eachother */
+    box-sizing: border-box;
+
+    border-radius: 12px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.315);
+    width: 28%;
+
+}
+
+.testimonials {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+}
+
+.tbox {
+
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+    line-height: 2.2rem;
+
+}
+
+/* Grabs the last element in the tbox class, in this case is the names of the testimonials 
+Could also do .tbox p:last-of-type */
+.tbox :last-child {
+
+    font-size: .8rem;
+    padding-left: 30px;
+
+}
+

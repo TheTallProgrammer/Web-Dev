@@ -1,0 +1,52 @@
+html {
+
+    height: 100%;
+
+}
+
+body {
+
+/* This creates a gradient */
+background-image: linear-gradient(#FC5E55,#FA4083);
+
+/* Sets the default font and color for the website */
+/* font-family: 'Playfair Display', serif; */
+font-family: 'Roboto', sans-serif;
+color: white;
+
+font-size: 1.125rem;
+
+}
+
+.container {
+
+width: 1024px;
+
+/* This makes the height have a min of 300px, and a dynamic max height depending on whatever is in the container. More useful than default height */
+min-height: 300px;
+
+/* Center the container */
+margin-left: auto;
+margin-right: auto;
+
+}
+
+main {
+
+    min-height: 300px;
+    /* display: flex; */
+
+    /* Centers the items in main vertically */
+    align-items: center;
+
+}
+
+.main-title {
+
+    font-size: 3.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+
+}
