@@ -1,0 +1,134 @@
+html {
+
+    /* Makes it so the background image stays in the window and doesn't have any outside space showing */
+    height: 150%;
+
+}
+
+body {
+
+    background-color: rgb(49, 49, 49);
+
+    background-image: url(images/background-adare-restaurant.jpg);
+    
+    /* Allows the background image to dynamically change when the window size is modified */
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    /* Centers the background image */
+    background-position: center;
+
+}
+
+.container {
+
+    /* Centers all elements within container */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Sets the width for all of the elements within container */
+    width: 1024px;
+
+}
+
+header {
+
+    height: 118px;
+
+    /* Centers what's in the header, for this instance it's the logo */
+    text-align: center;
+
+}
+
+nav {
+
+    background-color: rgba(0, 0, 0, 0.30);
+    /* height: 40px; */
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: white;
+    font-size: 14px;
+
+}
+
+/* Hyperlink Styles for the nav */
+nav a {
+
+    /* Changes the color/font of just the hyperlink text */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    /* font-size: 12px; */
+
+    /* Makes them spaced out from eachother */
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+main {
+
+    height: 400px;
+    text-align: center;
+
+    /* This squishes it together */
+    padding-top: 80px;
+    padding-left: 240px;
+    padding-right: 240px;
+
+}
+
+/* Hyperlink styles for the main */
+main a {
+
+    /* Change the color/font of the hyperlink */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Makes the hyperlink not have an underline */
+    /* text-decoration: none; */
+
+}
+
+.maps {
+
+    padding-bottom: 100px;
+
+}
+
+footer {
+
+    background-color: rgba(0, 0, 0, 0.548);
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+footer p {
+
+    color: rgba(255, 255, 255, 0.507);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 10px;
+    
+
+}
+
+h1 {
+
+    font-size: 84px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+p {
+
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+
+
