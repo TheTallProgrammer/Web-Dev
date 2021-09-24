@@ -1,0 +1,86 @@
+/* Global View (desktop view) */
+
+.body {
+
+    margin: 0;
+
+}
+
+
+.hide-desktop-only {
+
+    display: none;
+
+}
+
+.container {
+
+    background-color: rgb(81, 219, 155);
+    min-height: 500px;
+    max-width: 1024px;
+
+    /* Centers the container in the middle of the page */
+    margin: 0 auto;
+
+    /* Puts them next to eachother */
+    display: flex;
+
+    /* Makes them wrap next to eachother */
+    flex-wrap: wrap;
+
+    /* Puts space between the sides of the boxes */
+    justify-content: space-between;
+
+}
+
+.col {
+
+    /* This width is smaller so it can fit more in the space because the screen is bigger */
+    width: 30%;
+
+    /* Puts space on the bottom of the boxes to seperate them */
+    margin-bottom: 40px;
+}
+
+.col img {
+
+    width: 100%;
+    height: auto;
+
+}
+
+/* Media Query */
+/* When the screen reaches this size, trigger the code inside of it */
+/* Tablet View */
+@media (max-width: 768px) {
+
+    .col {
+
+        width: 45%;
+
+    }
+
+    .hide-desktop-only {
+
+        display: block;
+    
+    }
+    
+}
+
+/* Mobile View */
+/* usually make it 400px */
+@media (max-width: 400px) {
+
+    .col {
+
+        width: 100%;
+
+    }
+
+    .hide-mobile {
+
+        display: none;
+    }
+
+}
